@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func grapeButtonTouchUpInside(cell: GrapeCell) {
-        print(tableView.indexPathForCell(cell))
+        cell.hogeLabel.text = "🙆"
     }
 
 }

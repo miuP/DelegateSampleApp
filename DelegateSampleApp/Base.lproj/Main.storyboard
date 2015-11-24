@@ -41,12 +41,27 @@
                                                         <action selector="grapeButtonTouchUpInside:" destination="bJw-CO-k6L" eventType="touchUpInside" id="TWL-pl-Qr5"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❌" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVd-aX-gJm">
+                                                    <rect key="frame" x="28" y="11" width="22" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="7ul-fy-VwM"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Ibv-Mg-bxx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="OVd-aX-gJm" firstAttribute="leading" secondItem="mmD-bb-dCb" secondAttribute="leading" constant="28" id="5sm-pQ-AtZ"/>
                                                 <constraint firstItem="VGF-Fk-Qmt" firstAttribute="centerX" secondItem="mmD-bb-dCb" secondAttribute="centerX" id="JQj-19-lBl"/>
                                                 <constraint firstItem="VGF-Fk-Qmt" firstAttribute="centerY" secondItem="mmD-bb-dCb" secondAttribute="centerY" id="MFs-Fj-icd"/>
+                                                <constraint firstItem="OVd-aX-gJm" firstAttribute="centerY" secondItem="mmD-bb-dCb" secondAttribute="centerY" id="rtB-ie-baW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hogeLabel" destination="OVd-aX-gJm" id="4i4-hn-kKH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
